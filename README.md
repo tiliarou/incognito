@@ -1,12 +1,15 @@
 # incognito
-Wipes personal information from your Nintendo Switch by removing it from prodinfo.
+Wipes some personal information from your Nintendo Switch by removing it from PRODINFO (CAL0).
 
-# purpose
-a) So your switch can go online without worrying about a ban or using random dogdy DNS servers that are also likely to get you banned.
+NOTE: Atmosphere blocks writes to PRODINFO, so you must use ReiNX, SX OS, or a custom KIP to install this. Once installed, you can switch back to Atmosphere.
 
-b) so malicious homebrew applications cannot steal your personal certificate.
+## Purpose
+a) It enables your switch to go online while worrying slightly less about a ban.
+b) It prevents malicious homebrew applications from stealing your personal certificate.
 
-# disclaimer
-Always have a nand backup.  I am not responsible for any bricks or bans.  Use at your own risk, experimental.
+## Disclaimers
+* This application does not remove all personal information from your Switch, and should not be treated as a true preventative measure against getting banned.
 
-This application backs up your prodinfo to the SD root, you should keep this backup in a more secure location, and not leave it on the SD card where malicious applications can read it.
+* ALWAYS have a NAND backup. I am not responsible for any bricks or bans. Use at your own risk, as this is an experimental program.
+
+* This application backs up your PRODINFO to the SD card, as `backup/PRODINFO.bin` You should keep this backup in a more secure location, and not leave it on the SD card where it could be subject to corruption or be read by malicious applications.
